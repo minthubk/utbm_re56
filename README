@@ -1,0 +1,42 @@
+RE56 - Management of cell phones power
+
+Nicolas Henry nicolas.henry-01@utbm.fr
+Hyacinthe Cartiaux hyacinthe.cartiaux@free.fr
+
+1. Fonctionnalités
+
+La barre de menu propose deux menus déroulants : 
+- "Program" qui permet de démarrer la simulation et de l'arrêter
+- "Settings" donne accès à une fenêtre permettant la sélection du nombre de mobiles.
+
+Pour chaque mobile, les champs suivants sont modifiables : 
+- Case "Move" : appliquer un déplacement aléatoire au mobile pendant la simulation
+- Case "Enable" : activer ou désactiver le mobile
+- Sélectionneur de distance en km
+- Liste "Service" : permet de sélectionner le service (Voice, Data, Visio)
+
+Autres champs : 
+- "Power received" : puissance reçue par l'antenne
+- "Power send" : puissance émise par le mobile
+- "C/I"
+
+L'indicateur de couleur à droite peut prendre 3 couleurs : 
+- Rouge : service non disponible
+- Bleu : adaptation de la puissance en cours
+- Vert : service disponible
+
+2. Compilation
+
+Ce projet n'a été testé que sous GNU/Linux avec java 1.6.
+Décompresser l'archive et se placer dans le répertoire du projet.
+
+Pour compiler et créer le package :
+$ make all
+pour nettoyer (supprimer les fichiers compilés sauf le package exécutable) :
+$ make clean
+
+3. Exécution
+
+$ java -jar RE56.Main
+ou 
+$ ./run.sh
